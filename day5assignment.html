@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-5 assignment</title>
+</head>
+<body>
+    <script>
+        // codes here 
+        // Question 1
+        let a = 13;
+        let b = 20;
+
+        function AddTwoNumbers() {
+            console.log(`Total of ${a} + ${b} = ${a + b}`);
+        }
+        AddTwoNumbers();
+
+        // Question2
+        let x = 5;
+        let y = 3;
+
+        function IsValiedFunction() {
+            if (x < 10 && x> y) {
+                console.log(`True`)
+            }
+            else {
+                console.log(`False`)
+            }
+        }
+
+        IsValiedFunction();
+
+
+
+        // Question3
+        let d = 12;
+        let e = 20;
+
+        function Check() {
+            if (d % 10 == 0 && e % 10 == 0) {
+                console.log("true");
+            }
+            else if (d % 10 != 0 && e % 10 != 0) {
+                console.log("false");
+            }
+            else if (d % 10 == 0 || e % 10 == 0) {
+                console.log("true");
+            }
+        }
+        Check();
+
+
+
+        // Question4
+        var num = parseInt(prompt("Enter four Digit number"));
+        var n, t, i;
+        t = num;
+
+        function First_Digit() {
+            for (i = 0; num > 0; i++) {
+                n = num % 10;
+                num = num - n;
+                num = num / 10;
+            }
+            console.log(`Number of digits in ${t} is ${i}`);
+            console.log(`First Digit of ${t} is ${n}`);
+        }
+        First_Digit();
+
+
+
+        // Question5
+        let num = parseInt(prompt("Enter a number"));
+        let n;
+        function Last_Digit() {
+            n = num % 10;
+            console.log(`Last Digit of ${num} is ${n}`);
+        }
+
+        Last_Digit();
+
+
+
+        // Question6
+        let w = 31;
+        let t = 7;
+        let s;
+        function Find_The_Remainder() {
+            w = t % s;
+            console.log(`Remainder is ${c}`);
+        }
+        Find_The_Remainder();
+
+
+
+        // Question7
+        let g = 51;
+        let h = 2;
+        function Multiply_two_numbers() {
+            console.log(`Multiplication of ${g} and ${h} is ${g * h}`);
+        }
+        Multiply_two_numbers();
+
+
+
+        // Question8
+        let j = 50;
+        let k = 20;
+        let l = 100;
+        let total;
+        let avg;
+
+        function Sum() {
+            total = j + k + l;
+            console.log(`Total of ${j} and ${k} and ${l} is ${total}`)
+        }
+
+        function Avg() {
+            avg = total / 3;
+            console.log(`Average is ${total / 3}`);
+        }
+
+        Sum();
+        Avg();
+    </script>
+</body>
+</html>
